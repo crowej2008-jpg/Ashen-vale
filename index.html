@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ashen Vale</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+<div id="app"></div>
+<div id="av-modal-root"></div>
+<div id="av-toast-root"></div>
+
+<!-- ===================== Data (no dependencies) ===================== -->
+<script src="src/data/heroes.js"></script>
+<script src="src/data/armorSets.js"></script>
+<script src="src/data/orbSets.js"></script>
+<script src="src/data/artifacts.js"></script>
+
+<!-- ===================== Core ===================== -->
+<script src="src/core/utils.js"></script>
+<script src="src/core/state.js"></script>
+<script src="src/core/save.js"></script>
+
+<!-- ===================== Systems ===================== -->
+<!-- player.js and formation.js before stats.js (stats.js calls their globals defensively, order still cleanest this way) -->
+<script src="src/systems/player.js"></script>
+<script src="src/systems/formation.js"></script>
+<script src="src/systems/souls.js"></script>
+<script src="src/systems/awakening.js"></script>
+<script src="src/systems/orbs.js"></script>
+<script src="src/systems/armor.js"></script>
+<script src="src/systems/artifactSystem.js"></script>
+<script src="src/systems/stats.js"></script>
+<script src="src/systems/evolution.js"></script>
+<script src="src/systems/leveling.js"></script>
+<script src="src/systems/gacha.js"></script>
+<script src="src/systems/heroCreator.js"></script>
+<script src="src/systems/combat.js"></script>
+<script src="src/systems/campaign.js"></script>
+<script src="src/systems/arena.js"></script>
+<script src="src/systems/towers.js"></script>
+<script src="src/systems/devmode.js"></script>
+
+<!-- ===================== UI components ===================== -->
+<script src="src/ui/render.js"></script>
+<script src="src/ui/components/modal.js"></script>
+<script src="src/ui/components/toast.js"></script>
+<script src="src/ui/components/heroCard.js"></script>
+<script src="src/ui/components/navbar.js"></script>
+<script src="src/ui/components/battleResult.js"></script>
+
+<!-- ===================== UI screens ===================== -->
+<script src="src/ui/screens/home.js"></script>
+<script src="src/ui/screens/roster.js"></script>
+<script src="src/ui/screens/formationScreen.js"></script>
+<script src="src/ui/screens/summon.js"></script>
+<script src="src/ui/screens/campaignScreen.js"></script>
+<script src="src/ui/screens/arenaScreen.js"></script>
+<script src="src/ui/screens/towerScreens.js"></script>
+<script src="src/ui/screens/armorDungeonScreen.js"></script>
+<script src="src/ui/screens/heroCreatorScreen.js"></script>
+<script src="src/ui/screens/sanctumScreen.js"></script>
+<script src="src/ui/screens/awakeningHallScreen.js"></script>
+<script src="src/ui/screens/orbShopScreen.js"></script>
+<script src="src/ui/screens/devModeScreen.js"></script>
+<script src="src/ui/screens/armorPopup.js"></script>
+<script src="src/ui/screens/artifactPopup.js"></script>
+<script src="src/ui/screens/orbPopup.js"></script>
+<script src="src/ui/screens/heroDetails.js"></script>
+
+<!-- ===================== Entry point ===================== -->
+<script src="src/main.js"></script>
+</body>
+</html>
